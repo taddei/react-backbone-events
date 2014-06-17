@@ -1,0 +1,20 @@
+{
+  "name": "react-backbone-events",
+  "version": "0.0.1",
+  "description": "Define your events in a backbone style annotation",
+  "main": "BackboneEvents.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reactjs",
+    "backbone",
+    "events",
+    "jquery"
+  ],
+  "author": "Nicolo Taddei",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
+}
