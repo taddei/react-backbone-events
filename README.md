@@ -24,7 +24,7 @@ var MyClass = React.createClass({
     },
     render: function () {
         // or use your favourite jsx annotation
-        return React.DOM.div(className="clickable");
+        return React.DOM.div({className: "clickable"});
     }
 });
 ```
@@ -49,7 +49,7 @@ var MyClass = React.createClass({
     },
     render: function () {
         // or use your favourite jsx annotation
-        return React.DOM.div(className="clickable");
+        return React.DOM.div({className: "clickable"});
     }
 });
 ```
