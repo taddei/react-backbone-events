@@ -1,11 +1,8 @@
 var $ = require('jquery');
-var globalEvents = require('./global.js');
+var global = require('./lib/global.js');
 var splitEvents = /^(\S+)\s*(.*)$/;
-
 module.exports = {
-
-    globalEvents: globalEvents,
-
+    global: global,
     _parseEvents: function (events, action) {
         events = events || {};
         for (var key in events) {
@@ -21,7 +18,6 @@ module.exports = {
             }
         }
     },
-
     _addDOMListener: function (eventName, selector, listener) {
         $(this.getDOMNode()).on(eventName, selector, listener);
     },
@@ -34,7 +30,6 @@ module.exports = {
     _removeGlobalListener: function (selector, listener) {
         globalEvents.removeListener(selector, listener);
     },
-
     // add dom event listeners
     componentDidMount: function () {
         this._parseEvents(this.events, 'add');
